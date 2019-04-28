@@ -19,7 +19,7 @@ body {
     
 }
 
-#header a{
+#header p{
     margin-top: 55px;
     background-color: #000;
     color:#fff;
@@ -27,6 +27,11 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     
+}
+
+#header h1{
+    font-size: 1px;
+    color: #000
 }
 
 /*navi*/
@@ -181,7 +186,7 @@ ul#navi li {
 }
 /*---------------------------------------------------------*/
 @media (max-width: 600px){
-    #header {
+    #header p{
     margin-top: -10px;
     background-color: #000;
     margin-left: -24px;
