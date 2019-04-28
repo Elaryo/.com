@@ -174,7 +174,7 @@ ul#navi li {
 #termsp{
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    margin-left: 50px;
+    margin-left: 94px;
     margin-top: 50px;
     margin-right: 100px;
     margin-bottom: 20px;
@@ -183,6 +183,27 @@ ul#navi li {
 
 .footer-mobile{
     display: none;
+}
+
+#header-terms{
+    margin-top: 55px;
+    background-color: #000;
+    margin-left: 94px;
+    color:#fff;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    
+}
+
+#header-terms a{
+    margin-top: 55px;
+    background-color: #000;
+    color:#fff;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    
 }
 /*---------------------------------------------------------*/
 @media (max-width: 600px){
