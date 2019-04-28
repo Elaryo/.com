@@ -19,7 +19,7 @@ body {
     
 }
 
-#header h1{
+#header a{
     margin-top: 55px;
     background-color: #000;
     color:#fff;
@@ -181,7 +181,7 @@ ul#navi li {
 }
 /*---------------------------------------------------------*/
 @media (max-width: 600px){
-    #header h1{
+    #header {
     margin-top: -10px;
     background-color: #000;
     margin-left: -24px;
