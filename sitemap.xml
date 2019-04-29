@@ -4,18 +4,63 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
   <loc>https://walls4k.github.io/</loc>
-  <lastmod>2019-04-28T09:08:57+00:00</lastmod>
+  <lastmod>2019-04-29T11:53:49+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://walls4k.github.io/termsprivacy.html</loc>
-  <lastmod>2019-04-28T09:08:58+00:00</lastmod>
+  <loc>https://walls4k.github.io/1Paths.html</loc>
+  <lastmod>2019-04-29T11:53:49+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://walls4k.github.io/2Animals.html</loc>
+  <lastmod>2019-04-29T11:53:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://walls4k.github.io/3Nature.html</loc>
+  <lastmod>2019-04-29T11:53:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://walls4k.github.io/4Water.html</loc>
+  <lastmod>2019-04-29T11:53:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://walls4k.github.io/5Architecture.html</loc>
+  <lastmod>2019-04-29T11:53:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://walls4k.github.io/6Sports.html</loc>
+  <lastmod>2019-04-29T11:53:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://walls4k.github.io/7Mountains.html</loc>
+  <lastmod>2019-04-29T11:53:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://walls4k.github.io/8Patterns.html</loc>
+  <lastmod>2019-04-29T11:53:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://walls4k.github.io/termsprivacy.html</loc>
+  <lastmod>2019-04-29T11:53:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://walls4k.github.io/index.html</loc>
+  <lastmod>2019-04-29T11:53:49+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
