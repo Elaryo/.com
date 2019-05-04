@@ -189,15 +189,32 @@ ul#navi li {
 }
 
 
+hr { 
+    width: 95%; 
+    height: ; 
+    margin: 0 auto;
+    color: #000;
+    background: #000;
+    margin-bottom: 20px;
+    visibility: hidden;
+}
 
-
+#hr{
+    width: 95%; 
+    height: ; 
+    margin: 0 auto;
+    color: #000;
+    background: #000;
+    margin-bottom: 33px;
+    
+}
 .footer a{
   width: 90%;
     height: 20px;
     float: left;
-    margin-bottom: 10px;
-    margin-left: 69px;
+    margin-bottom: 15px;
     
+    margin-left: 69px;
     background-color: transparent;
     color: #fff;
     font-family: 'Roboto', sans-serif;
