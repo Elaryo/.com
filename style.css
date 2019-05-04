@@ -162,10 +162,14 @@ ul#navi li {
 
 
 
-#box a:hover{
-    background-color: #fff;
-    color:#000;
+#box:hover {
+  transform: scale(1.5); 
 }
+
+#box:active {
+  transform: scale(2.3);
+}
+
 
 
 #box{
