@@ -162,14 +162,10 @@ ul#navi li {
 
 
 
-#box:hover {
-  transform: scale(1.5); 
+#box a:hover{
+    background-color: #fff;
+    color:#000;
 }
-
-#box:active {
-  transform: scale(2.3);
-}
-
 
 
 #box{
@@ -185,8 +181,14 @@ ul#navi li {
 
 
 #box:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.5); 
 }
+
+#box:active {
+  transform: scale(2.3);
+}
+
+
 
 
 .footer a{
