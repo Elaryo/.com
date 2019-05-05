@@ -278,9 +278,6 @@ hr {
     
 }
 
-iframe{display: none}
-#tr{display: none}
-#tr2{display: none}
 
 /*---------------------------------------------------------*/
 @media (max-width: 900px){
@@ -288,20 +285,14 @@ iframe{display: none}
         width:650px;
         height: 100px;
     }
-    iframe{display: none}
-    #tr{display: none}
-    #tr2{display: none}
-}
-
+    
 /*---------------------------------------------------------*/
 @media (max-width: 800px){
     #kategorie{
         width:600px;
         height: 100px;
     }
-    iframe{display: none}
-    #tr{display: none}
-    #tr2{display: none}
+    
 }
 
 /*---------------------------------------------------------*/
@@ -310,9 +301,7 @@ iframe{display: none}
         width:500px;
         height: 100px;
     }
-    iframe{display: none}
-    #tr{display: none}
-    #tr2{display: none}
+    
 }
 
 /*---------------------------------------------------------*/
@@ -323,39 +312,6 @@ iframe{display: none}
     }
     hr{
         display: none;
-    }
-    
-    iframe{
-        display: block;
-        margin-top: -10px;
-        width:210px;
-        position: fixed;
-        height: 50px;
-        border-style: none;
-        margin-left: 150px;
-        
-    }
-    
-    #tr{
-        display: block;
-        margin-top: -10px;
-        
-        position: fixed;
-       
-        border-style: none;
-        margin-left: 150px;
-        
-    }
-    
-    #tr2{
-        display: block;
-        margin-top: -10px;
-        
-        position: fixed;
-       
-        border-style: none;
-        margin-left: 310px;
-        
     }
     
 
