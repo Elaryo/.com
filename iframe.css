@@ -1,16 +1,19 @@
+body{
+    width: 200px
+}
 ghost_btn {
     text-decoration: none;
     font-size: 14px;
     font-weight:600;
     color: #FFF ;
     padding: 3px 10px;
-    display: inline-block;
+    
     overflow: hidden;
     border-radius: 9px;
     cursor: pointer;
     background-color: #292928; 
     font-family: 'Roboto', sans-serif;
-    float: left;
+    float: right;
     margin-left: -116px;
     margin-top: 265px;
 }
@@ -26,13 +29,13 @@ ghost_btn {
     font-weight:600;
     color: #FFF ;
     padding: 3.5px 11px;
-    display: inline-block;
+    
     overflow: hidden;
     border-radius: 9px;
     cursor: pointer;
     background-color: #292928; 
     font-family: 'Roboto', sans-serif;
-    float: left;
+    float: right;
     margin-right: 16px;
     margin-top: 30px;
     
