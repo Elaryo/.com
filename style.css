@@ -184,7 +184,7 @@ ul#navi li {
   transform: scale(1.5); 
 }
 
-#box:active {
+#box img:active {
   transform: scale(2.3);
 }
 
