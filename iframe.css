@@ -13,7 +13,7 @@ ghost_btn {
     cursor: pointer;
     background-color: #292928; 
     font-family: 'Roboto', sans-serif;
-    float: right;
+    float: left;
     margin-left: -116px;
     margin-top: 265px;
 }
@@ -36,7 +36,7 @@ ghost_btn {
     cursor: pointer;
     background-color: #383838; 
     font-family: 'Roboto', sans-serif;
-    float: right;
+    float: left;
     margin-right: 16px;
     margin-top: 15px;
     
