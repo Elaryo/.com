@@ -326,6 +326,7 @@ iframe{display: none}
     }
     
     iframe{
+        display: block;
         margin-top: -10px;
         width:210px;
         position: fixed;
@@ -336,6 +337,7 @@ iframe{display: none}
     }
     
     #tr{
+        display: block;
         margin-top: -10px;
         
         position: fixed;
@@ -346,6 +348,7 @@ iframe{display: none}
     }
     
     #tr2{
+        display: block;
         margin-top: -10px;
         
         position: fixed;
@@ -356,7 +359,7 @@ iframe{display: none}
     }
     
     
-    }
+    
     
     .hr{
         display: none;
