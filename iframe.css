@@ -21,6 +21,7 @@ ghost_btn {
 #kategorie {
     margin-left: 69px;
     padding-bottom: 60px;
+    margin-top: -10px
 }
 
 .ghost_btn-kategorie {
@@ -31,13 +32,13 @@ ghost_btn {
     padding: 3.5px 11px;
     
     overflow: hidden;
-    border-radius: 9px;
+    border-radius: 11px;
     cursor: pointer;
-    background-color: #292928; 
+    background-color: #383838; 
     font-family: 'Roboto', sans-serif;
     float: right;
     margin-right: 16px;
-    margin-top: 30px;
+    margin-top: 15px;
     
 }
 
