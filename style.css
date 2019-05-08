@@ -343,7 +343,7 @@ hr {
     
     #header p{
     margin-top: -10px;
-    background-color: #000;
+    background-color: transparent;
     margin-left: -24px;
     color:#fff;
     font-size: 45px;
