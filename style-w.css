@@ -330,7 +330,7 @@ hr {
     }
     #header{
     margin-top: 38px;
-    background-color: #000;
+    background-color: transparent;
     margin-left: 50px;
     color:#fff;
     font-size: 40px;
@@ -340,9 +340,9 @@ hr {
     
     #header p{
     margin-top: -10px;
-    background-color: #000;
+    background-color: transparent;
     margin-left: -24px;
-    color:#fff;
+    color:#000;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -369,7 +369,7 @@ hr {
     }
     
     #galerie{
-    width: 8080px;
+    width: 10810px;
     
     text-align: center;
     margin-right: 20px;
@@ -423,11 +423,13 @@ hr {
     margin-top: 60px;
     margin-left: 25px;
     position: fixed;
+    color: #000;
     }
     .footer-mobile a{
     background-color: transparent;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    margin-right: 10px
+    margin-right: 10px;
+    color: #000
     }
 }
