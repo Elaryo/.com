@@ -268,7 +268,7 @@ hr {
 
 #header-terms{
     margin-top: 55px;
-    background-color: #000;
+    background-color: transparent;
     margin-left: 0px;
     color:#fff;
     font-size: 40px;
@@ -279,7 +279,7 @@ hr {
 
 #header-terms a{
     margin-top: 55px;
-    background-color: #000;
+    background-color: transparent;
     color:#fff;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
@@ -333,7 +333,7 @@ hr {
     }
     #header{
     margin-top: 38px;
-    background-color: #000;
+    background-color: transparent;
     margin-left: 50px;
     color:#fff;
     font-size: 40px;
