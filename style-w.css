@@ -39,6 +39,8 @@ body {
     color: transparent
 }
 
+
+
 /*navi*/
 
 
@@ -104,10 +106,13 @@ ul#navi li {
     position: static;
     border-radius: 9px;
     margin-left: 35px;
-    -webkit-box-shadow: 0px 0px 128px -35px rgba(0,0,0,1);
--moz-box-shadow: 0px 0px 128px -35px rgba(0,0,0,1);
-box-shadow: 0px 0px 128px -35px rgba(0,0,0,1);
-   
+    -webkit-box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
+box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
+
+    
+    
+    
 }
 
 #galerie li p{
@@ -146,6 +151,7 @@ box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
 #kategorie {
     margin-left: 69px;
     padding-bottom: 60px;
+    display: none
 }
 
 .ghost_btn-kategorie {
@@ -170,6 +176,154 @@ box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
     background-color: #fff;
     color:#000;
 }
+
+
+
+
+.filterDiv {
+  float: left;
+  width: 220px;
+  height: 300px;
+  text-align: center;
+  display: none;
+}
+
+
+#myBtnContainer {
+    margin-left: 69px;
+    padding-bottom: 60px;
+    z-index: 1;
+}
+
+button.btn  {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:600;
+    color: #FFF ;
+    padding: 3.5px 11px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 19px;
+    cursor: pointer;
+    background-color: #313131; 
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    margin-right: 16px;
+    margin-top: 30px;
+    border-style: none;
+    
+}
+
+.filterDiv a.ghost_btn {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight:600;
+    color: #FFF ;
+    padding: 3px 10px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 13px;
+    cursor: pointer;
+    background-color: #292928; 
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    margin-left: -152px;
+    margin-top: 265px;
+    -webkit-box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
+}
+
+.filterDiv a:hover{
+    background-color: #fff;
+    color:#000;
+}
+
+
+
+button.btn:hover{
+    background-color: #fff;
+    color:#000;
+}
+
+.container{
+    padding-left: 34px;
+    padding-top: 25px;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.filterDiv{
+    float:left;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    transition: transform .1s; 
+    z-index: 1000;
+}
+.filterDiv img{
+    width: 150px;
+    height: 300px;
+    background-color: #000;
+    float: left;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    position: static;
+    border-radius: 9px;
+    margin-right: 35px;
+    margin-left: 35px;
+    -webkit-box-shadow: 0px 0px 128px -35px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 128px -35px rgba(0,0,0,1);
+    box-shadow: 0px 0px 128px -35px rgba(0,0,0,1);
+}
+
+
+
+
+
+
+       
+    
+
+  
+}
+
+.filterDiv:hover {
+  transform: scale(1.3); 
+}
+
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #515151;
+  color: white;
+}
+
+
+
+
 
 
 
@@ -300,6 +454,11 @@ hr {
         width:650px;
         height: 100px;
     }
+    #myBtnContainer {
+    margin-left: 69px;
+    padding-bottom: 120px;
+    z-index: 1;
+}
     
 /*---------------------------------------------------------*/
 @media (max-width: 800px){
@@ -308,6 +467,11 @@ hr {
         height: 100px;
     }
     
+    #myBtnContainer {
+    margin-left: 69px;
+    padding-bottom: 120px;
+    z-index: 1;
+}
 }
 
 /*---------------------------------------------------------*/
@@ -316,6 +480,11 @@ hr {
         width:500px;
         height: 100px;
     }
+    #myBtnContainer {
+    margin-left: 69px;
+    padding-bottom: 120px;
+    z-index: 1;
+}
     
 }
 
@@ -335,7 +504,7 @@ hr {
     }
     #header{
     margin-top: 38px;
-    background-color: transparent;
+    background-color: #000;
     margin-left: 50px;
     color:#fff;
     font-size: 40px;
@@ -345,9 +514,9 @@ hr {
     
     #header p{
     margin-top: -10px;
-    background-color: transparent;
+    background-color: #000;
     margin-left: -24px;
-    color:#000;
+    color:#fff;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -374,7 +543,7 @@ hr {
     }
     
     #galerie{
-    width: 10810px;
+    width: 8080px;
     
     text-align: center;
     margin-right: 20px;
@@ -428,13 +597,11 @@ hr {
     margin-top: 60px;
     margin-left: 25px;
     position: fixed;
-    color: #000;
     }
     .footer-mobile a{
     background-color: transparent;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    margin-right: 10px;
-    color: #000
+    margin-right: 10px
     }
 }
