@@ -1,12 +1,10 @@
-/*body*/
 
 body {
     background-color: #131313;
     margin: 0 auto;
-    
-    
-    
 }
+
+
 
 @font-face { font-family: 'Walls-Regular';
              src: url('Walls-Regular/Walls-Regular.ttf') format('truetype'); }
@@ -31,7 +29,7 @@ body {
     font-weight: 900;
     font-family: 'Walls-Regular', sans-serif;
     font-size: 75px;
-    letter-spacing: -7px
+    letter-spacing: -8px
 }
 
 #header h1{
@@ -486,9 +484,58 @@ hr {
 /*---------------------------------------------------------*/
 @media (max-width: 600px){
     
+    .filterDiv img{
+    width: 180px;
+    height: 360px;
+    background-color: #000;
+    float: left;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    position: static;
+    border-radius: 9px;
+    margin-right: 35px;
+    margin-left: 35px;
+    -webkit-box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
+    box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
+    }
+    
+    .container{
+    margin-left: -10px;
+    padding-top: 75px;
+    height: 430px;
+        width: 9500px
+    }
+    
+    .filterDiv a.ghost_btn {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight:600;
+    color: #FFF ;
+    padding: 4px 12px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 13px;
+    cursor: pointer;
+    background-color: #292928; 
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    margin-left: -174px;
+    margin-top: 314px;
+    -webkit-box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
+    }
+
+  
     #kategorie{
         display: none
     }
+    
+    #myBtnContainer{
+        display: none
+    }
+    
     hr{
         display: none;
     }
@@ -498,9 +545,9 @@ hr {
         display: none;
     }
     #header{
-    margin-top: 38px;
-    background-color: #000;
-    margin-left: 50px;
+    margin-top: 20px;
+    background-color: transparent;
+    margin-left: 22px;
     color:#fff;
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
@@ -508,15 +555,15 @@ hr {
     }
     
     #header p{
-    margin-top: -10px;
-    background-color: #000;
-    margin-left: -24px;
+    margin-top: 5px;
+    background-color: transparent;
     color:#fff;
-    font-size: 45px;
-    font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    position: fixed
-    }
+    font-family: 'Walls-Regular', sans-serif;
+    font-size: 75px;
+    letter-spacing: -8px;
+        position: fixed
+}
     
     #realbody{
     margin-right: 30px;
@@ -567,10 +614,10 @@ hr {
     
     .ghost_btn {
     text-decoration: none;
-    font-size: 17px;
+    font-size: 19px;
     font-weight:600;
     color: #FFF ;
-    padding: 4px 12px;
+    padding: 9px 14px;
     display: inline-block;
     overflow: hidden;
     border-radius: 9px;
@@ -592,6 +639,7 @@ hr {
     margin-top: 60px;
     margin-left: 25px;
     position: fixed;
+    bottom: 20px;
     }
     .footer-mobile a{
     background-color: transparent;
