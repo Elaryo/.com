@@ -436,7 +436,8 @@ hr {
 
 #pa{
     font-size: 0.1px;
-    color: transparent
+    color: transparent;
+    display: none
 }
 
 /*---------------------------------------------------------*/
