@@ -244,7 +244,7 @@ button.btn:hover{
 }
 
 .container{
-    margin-left: 34px;
+    padding-left: 34px;
     padding-top: 25px;
 }
 
@@ -350,7 +350,7 @@ hr {
     margin: 0 auto;
     color: #000;
     background: #000;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     visibility: hidden;
 }
 
@@ -501,7 +501,7 @@ hr {
     }
     
     .container{
-    margin-left: -10px;
+    padding-left: -10px;
     padding-top: 75px;
     height: 430px;
         width: 9500px
