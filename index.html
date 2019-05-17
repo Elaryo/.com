@@ -65,6 +65,7 @@
         <a class="ghost_btn-kategorie" href="index-w.html"><img id="sw" src=pictures/sw.png></a>
     </div>
     
+    <div id=realbody>
     <!-- Control buttons -->
     <div id="myBtnContainer">
         <button class="btn active" onclick="filterSelection('all')"> Show all</button>
@@ -76,7 +77,9 @@
         <button class="btn" onclick="filterSelection('sports')"> Sports</button>
         <button class="btn" onclick="filterSelection('mountains')"> Mountains</button>
         <button class="btn" onclick="filterSelection('patterns')"> Patterns</button>
+        <div class="toggle"><img id="sw" src="pictures/sw.png"></div>
     </div>
+    
     
     <div class="container">
     
@@ -124,6 +127,23 @@
         <div class="filterDiv architecture"><img src="pictures/V44.jpg" ><a class="ghost_btn" href="pictures/W44.jpg" download>Download</a></div>
         <div class="filterDiv water mountains"><img src="pictures/V45.jpg" ><a class="ghost_btn" href="pictures/W45.jpg" download>Download</a></div>
     </div>
+     </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('.toggle').toggleClass('active')
+            $('body').toggleClass('night')
+            $('.filterDiv img').toggleClass('night')
+            $('#header p').toggleClass('night')
+            $('button.btn:hover').toggleClass('night')
+            $('.filterDiv a.ghost_btn').toggleClass('night')
+            $('.footer a').toggleClass('night')
+        })
+    })
+    </script>
     
     <script>
         filterSelection("all")
@@ -171,6 +191,7 @@
     </script>
 
     
+    
     <hr>
     
     <p id=pa>Find the most beautiful free 4k images, download them and use them for your mobile our for your desktop.</p>
@@ -197,6 +218,7 @@
         <a class="footer" >© 2019 Walls4k</a>
 
     </li>
+        
     
     <script src="Java.js"></script>
 

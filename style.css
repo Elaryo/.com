@@ -1,10 +1,103 @@
-
-body {
-    background-color: #131313;
-    margin: 0 auto;
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #e2e2e2
+}
+body.night
+{
+    background: #131313;
 }
 
 
+
+.toggle
+{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:600;
+    color: #FFF ;
+    padding: 3.5px 11px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 19px;
+    cursor: pointer;
+    background-color: #313131; 
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    margin-right: 16px;
+    margin-top: 30px;
+    border-style: none;
+}
+
+.toggle:before
+{
+    display: none
+}
+.toggle.active:before
+{
+    left: 27px;
+    background: #fff;
+}
+
+.filterDiv img.night{
+    width: 150px;
+    height: 300px;
+    background-color: #000;
+    float: left;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    position: static;
+    border-radius: 9px;
+    margin-right: 35px;
+    margin-left: 35px;
+    -webkit-box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
+    box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
+}
+
+#header p.night{
+    margin-top: 55px;
+    background-color: transparent;
+    color:#fff;
+    font-weight: 900;
+    font-family: 'Walls-Regular', sans-serif;
+    font-size: 75px;
+    letter-spacing: -8px
+}
+
+.filterDiv a.ghost_btn.night {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight:600;
+    color: #FFF ;
+    padding: 3px 10px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 13px;
+    cursor: pointer;
+    background-color: #292928; 
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    margin-left: -152px;
+    margin-top: 265px;
+    -webkit-box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
+}
+
+.footer a.night{
+  width: 90%;
+    height: 20px;
+    float: left;
+    margin-bottom: 15px;
+    
+    margin-left: 69px;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
 
 @font-face { font-family: 'Walls-Regular';
              src: url('Walls-Regular/Walls-Regular.ttf') format('truetype'); }
@@ -19,13 +112,14 @@ body {
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
+    padding-bottom: 20px
     
 }
 
 #header p{
     margin-top: 55px;
     background-color: transparent;
-    color:#fff;
+    color:#000;
     font-weight: 900;
     font-family: 'Walls-Regular', sans-serif;
     font-size: 75px;
@@ -47,81 +141,15 @@ body {
  list-style:none;
  text-decoration:none;
 }
-#navi {
- text-align:right;
- 
-}
 
-ul#navi li {
- display:inline-block;
- background: tranparent;
- color: #dddddd;
- margin-left -7px; 
- margin-bottom:1px; 
-}
-#navi a {
- display:block;
- padding:14px;
- color:#dddddd;
- font-size: 19px;
- font-family: 'Roboto', sans-serif;
-    font-weight: 700;
- 
-}
-
-#navi a:hover {
- color: #000;
-}
-#navi {
-    margin-right:25px;
-    padding-top: 13px;
-}
 
 
 
 #sw{
-    width: 45px;
+    width: 50px;
+    margin-left: -1px
 }
 
-#realbody{
-    height: 100%;
-    background-color: transparent;
-    width: 100%;
-}
-
-#galerie{
-    margin-left: 34px;
-    padding-top: 20px;
-}
-#galerie img{
-    width: 150px;
-    height: 300px;
-    background-color: #000;
-    float: left;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    position: static;
-    border-radius: 9px;
-    margin-left: 35px;
-    -webkit-box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
--moz-box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
-box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
-
-    
-    
-    
-}
-
-#galerie li p{
-    
-    width: 4px;
-    
-    float:left;
-    font-size: 15px;
-    
-    text-align: left;
-    margin-left: 20px
-}
 
 
 
@@ -151,31 +179,6 @@ box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
     display: none
 }
 
-.ghost_btn-kategorie {
-    text-decoration: none;
-    font-size: 15px;
-    font-weight:600;
-    color: #FFF ;
-    padding: 3.5px 11px;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 19px;
-    cursor: pointer;
-    background-color: #313131; 
-    font-family: 'Roboto', sans-serif;
-    float: left;
-    margin-right: 16px;
-    margin-top: 30px;
-    
-}
-
-.ghost_btn-kategorie:hover{
-    background-color: #fff;
-    color:#000;
-}
-
-
-
 
 .filterDiv {
   float: left;
@@ -188,8 +191,7 @@ box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
 
 #myBtnContainer {
     margin-left: 69px;
-    padding-bottom: 60px;
-    z-index: 1;
+    padding-bottom: 67px;
 }
 
 button.btn  {
@@ -224,7 +226,7 @@ button.btn  {
     background-color: #292928; 
     font-family: 'Roboto', sans-serif;
     float: left;
-    margin-left: -152px;
+    margin-left: -117px;
     margin-top: 265px;
     -webkit-box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
@@ -245,8 +247,10 @@ button.btn:hover{
 
 .container{
     padding-left: 34px;
-    padding-top: 25px;
+    padding-top: 34px;
+    padding-bottom: 44px
 }
+
 
 .container {
   overflow: hidden;
@@ -269,15 +273,10 @@ button.btn:hover{
     padding-top: 0px;
     position: static;
     border-radius: 9px;
-    margin-right: 35px;
     margin-left: 35px;
-    -webkit-box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
-    box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
-       
-    
-
-  
+    -webkit-box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
+-moz-box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
+box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
 }
 
 .filterDiv:hover {
@@ -348,9 +347,9 @@ hr {
     width: 95%; 
     height: ; 
     margin: 0 auto;
-    color: #000;
+    color: transparent;
     background: #000;
-    padding-bottom: 20px;
+    margin-bottom: -35px;
     visibility: hidden;
 }
 
@@ -358,11 +357,13 @@ hr {
     width: 95%; 
     height: ; 
     margin: 0 auto;
-    color: #000;
+    color: transparent;
     background: #000;
     margin-bottom: 33px;
     
 }
+
+
 .footer a{
   width: 90%;
     height: 20px;
@@ -371,7 +372,7 @@ hr {
     
     margin-left: 69px;
     background-color: transparent;
-    color: #fff;
+    color: #292928;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -437,7 +438,20 @@ hr {
     font-size: 0.1px
 }
 
+/*---------------------------------------------------------*/
+@media (max-width: 990px){
+    #kategorie{
+        width:650px;
+        height: 100px;
+    }
+    
+    #myBtnContainer {
+    margin-left: 69px;
+    padding-bottom: 130px;
+}
 
+
+    
 /*---------------------------------------------------------*/
 @media (max-width: 900px){
     #kategorie{
@@ -447,9 +461,10 @@ hr {
     
     #myBtnContainer {
     margin-left: 69px;
-    padding-bottom: 120px;
-    z-index: 1;
+    padding-bottom: 130px;
 }
+
+
     
 /*---------------------------------------------------------*/
 @media (max-width: 800px){
@@ -458,13 +473,11 @@ hr {
         height: 100px;
     }
     
-    #myBtnContainer {
+   #myBtnContainer {
     margin-left: 69px;
-    padding-bottom: 120px;
-    z-index: 1;
+    padding-bottom: 130px;
 }
-    
-}
+
 
 /*---------------------------------------------------------*/
 @media (max-width: 700px){
@@ -475,9 +488,7 @@ hr {
     
     #myBtnContainer {
     margin-left: 69px;
-    padding-bottom: 120px;
-    z-index: 1;
-}
+    padding-bottom: 130px;
     
 }
 
