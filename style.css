@@ -435,7 +435,8 @@ hr {
 }
 
 #pa{
-    font-size: 0.1px
+    font-size: 0.1px;
+    color: transparent
 }
 
 /*---------------------------------------------------------*/
@@ -449,6 +450,9 @@ hr {
     margin-left: 69px;
     padding-bottom: 130px;
 }
+    #pa{
+        display: none;
+    }
 
 
     
@@ -463,6 +467,9 @@ hr {
     margin-left: 69px;
     padding-bottom: 130px;
 }
+    #pa{
+        display: none;
+    }
 
 
     
@@ -477,6 +484,9 @@ hr {
     margin-left: 69px;
     padding-bottom: 130px;
 }
+    #pa{
+        display: none;
+    }
 
 
 /*---------------------------------------------------------*/
@@ -491,9 +501,16 @@ hr {
     padding-bottom: 130px;
     
 }
+    #pa{
+        display: none;
+    }
 
 /*---------------------------------------------------------*/
 @media (max-width: 600px){
+    
+    #pa{
+        display: none;
+    }
     
     .filterDiv img{
     width: 180px;
