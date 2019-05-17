@@ -505,14 +505,14 @@ hr {
     position: static;
     border-radius: 9px;
     margin-right: 35px;
-    margin-left: 35px;
-    -webkit-box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
-    box-shadow: 0px 0px 35px 18px rgba(0,0,0,1);
+    margin-left: 28px;
+    -webkit-box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
+-moz-box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
+box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
     }
     
     .container{
-    padding-left: -10px;
+    padding-left: 0px;
     padding-top: 75px;
     height: 430px;
         width: 9500px
@@ -558,7 +558,7 @@ hr {
     #header{
     margin-top: 20px;
     background-color: transparent;
-    margin-left: 22px;
+    margin-left: 25px;
     color:#fff;
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
@@ -566,9 +566,9 @@ hr {
     }
     
     #header p{
-    margin-top: 5px;
+    margin-top: 15px;
     background-color: transparent;
-    color:#fff;
+    color:#292918;
     font-weight: 900;
     font-family: 'Walls-Regular', sans-serif;
     font-size: 75px;
@@ -654,7 +654,7 @@ hr {
     }
     .footer-mobile a{
     background-color: transparent;
-    color: #fff;
+    color: #000;
     font-family: 'Roboto', sans-serif;
     margin-right: 10px
     }
