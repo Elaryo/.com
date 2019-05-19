@@ -515,31 +515,37 @@ hr {
 /*---------------------------------------------------------*/
 @media (max-width: 600px){
     
+    body{
+        width:10800px
+    }
+    
     #pa{
         display: none;
     }
     
     .filterDiv img{
-    width: 180px;
-    height: 360px;
+    width: 200px;
+    height: 400px;
     background-color: #000;
     float: left;
     padding-bottom: 0px;
     padding-top: 0px;
     position: static;
     border-radius: 9px;
-    margin-right: 35px;
-    margin-left: 28px;
+    margin-left: 30px;
     -webkit-box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
 -moz-box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
 box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
+    }
+    .filterDiv{
+        margin-right: 30px
     }
     
     .container{
     padding-left: 0px;
     padding-top: 75px;
-    height: 430px;
-        width: 9500px
+    height: 615px;
+    
     }
     
     .filterDiv a.ghost_btn {
@@ -555,8 +561,8 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
     background-color: #292928; 
     font-family: 'Roboto', sans-serif;
     float: left;
-    margin-left: -174px;
-    margin-top: 314px;
+    margin-left: -151px;
+    margin-top: 354px;
     -webkit-box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
