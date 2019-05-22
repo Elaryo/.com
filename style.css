@@ -6,6 +6,7 @@ body
     padding: 0;
     font-family: sans-serif;
     background-color: #e2e2e2;
+    
 }
 body.night
 {
@@ -182,12 +183,8 @@ box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
 }
 
 
-.filterDiv {
-  float: left;
-  width: 220px;
-  height: 300px;
-  text-align: center;
-  display: none;
+.blackRow{
+    display: none
 }
 
 
@@ -254,9 +251,10 @@ button.btn:hover{
 }
 
 .container{
-    padding-left: 34px;
+    padding-left: 70px;
     padding-top: 34px;
-    padding-bottom: 44px
+    padding-bottom: 44px;
+    padding-right: 35px
 }
 
 
@@ -265,13 +263,19 @@ button.btn:hover{
 }
 
 .filterDiv{
+    
+    width: calc(100%/6);
+    height: 300px;
+    text-align: center;
     float:left;
     margin-top: 20px;
     margin-bottom: 50px;
     background-color: transparent;
     transition: transform .1s; 
     z-index: 1000;
+    
 }
+
 .filterDiv img{
     width: 150px;
     height: 300px;
@@ -281,7 +285,7 @@ button.btn:hover{
     padding-top: 0px;
     position: static;
     border-radius: 9px;
-    margin-left: 35px;
+    
     -webkit-box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
 -moz-box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
 box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
@@ -449,6 +453,39 @@ hr {
 }
 
 /*---------------------------------------------------------*/
+@media (max-width: 1300px){
+    #kategorie{
+        width:650px;
+        height: 100px;
+    }
+    
+    #myBtnContainer {
+    margin-left: 69px;
+    padding-bottom: 130px;
+}
+    #pa{
+        display: none;
+    }
+    
+    .filterDiv{
+    
+    width: calc(100%/5);
+    height: 300px;
+    text-align: center; 
+    float:left;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    transition: transform .1s; 
+    z-index: 1000;
+    
+}
+
+    .blackRow{
+    display: none
+}
+
+/*---------------------------------------------------------*/
 @media (max-width: 990px){
     #kategorie{
         width:650px;
@@ -462,6 +499,24 @@ hr {
     #pa{
         display: none;
     }
+    
+    .filterDiv{
+    
+    width: calc(100%/4);
+    height: 300px;
+    text-align: center; 
+    float:left;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    transition: transform .1s; 
+    z-index: 1000;
+    
+}
+
+    .blackRow{
+    display: none
+}
 
 
     
@@ -479,6 +534,43 @@ hr {
     #pa{
         display: none;
     }
+    .blackRow{
+    display: none
+}
+
+/*---------------------------------------------------------*/
+@media (max-width: 840px){
+    #kategorie{
+        width:600px;
+        height: 100px;
+    }
+    
+   #myBtnContainer {
+    margin-left: 69px;
+    padding-bottom: 130px;
+}
+    #pa{
+        display: none;
+    }
+    .filterDiv{
+    
+    width: calc(100%/3);
+    height: 300px;
+    text-align: center; 
+    float:left;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    transition: transform .1s; 
+    z-index: 1000;
+    
+}
+
+    .blackRow{
+    display: none
+}
+    
+    
 
 
     
@@ -496,6 +588,12 @@ hr {
     #pa{
         display: none;
     }
+    
+    .blackRow{
+    display: none
+}
+    
+    
 
 
 /*---------------------------------------------------------*/
@@ -513,20 +611,25 @@ hr {
     #pa{
         display: none;
     }
+    
+    .blackRow{
+    display: none
+}
+  
 
 /*---------------------------------------------------------*/
 @media (max-width: 600px){
     body
-{
+    {
     
-    max-width: 1000000%;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background-color: #e2e2e2;
-}
-    body{
-        width:10800px
+        
+        max-width: 100%;
+        margin:0 auto;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: #e2e2e2;
+        
+        
     }
     
     #pa{
@@ -534,33 +637,34 @@ hr {
     }
     
     .filterDiv img{
-    width: 200px;
-    height: 400px;
+    width: 100%;
+    height: 20%;
     background-color: #000;
     float: left;
     padding-bottom: 0px;
     padding-top: 0px;
     position: static;
     border-radius: 9px;
-    margin-left: 30px;
-    -webkit-box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
--moz-box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
-box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 53px -15px rgba(0,0,0,0);
+-moz-box-shadow: 0px 0px 53px -15px rgba(0,0,0,0);
+box-shadow: 0px 0px 53px -15px rgba(0,0,0,0);
     }
-    .filterDiv{
-        margin-right: 30px
-    }
+    
     
     .container{
     padding-left: 0px;
-    padding-top: 75px;
-    height: 615px;
+    padding-top: 25px;
+    padding-right: 0px;
+    width: 60%;
+    margin: 0 auto;
+    
     
     }
     
     .filterDiv a.ghost_btn {
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
     font-weight:600;
     color: #FFF ;
     padding: 4px 12px;
@@ -571,12 +675,23 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
     background-color: #292928; 
     font-family: 'Roboto', sans-serif;
     float: left;
-    margin-left: -151px;
-    margin-top: 354px;
-    -webkit-box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
+    margin-left:calc(100% - 68%);
+    margin-top: -50px;
+    -webkit-box-shadow: 0px 0px 72px 25px rgba(0,0,0,0);
+    -moz-box-shadow: 0px 0px 72px 25px rgba(0,0,0,0);
+    box-shadow: 0px 0px 72px 25px rgba(0,0,0,0);
+    width:30%
     }
+    
+    #blackRow{
+    margin-top: -10px;
+    padding: 0;
+    width: 100%;
+    border-top: 40px solid #fff;
+    position: fixed;
+    z-index: 90
+    
+}
 
   
     #kategorie{
@@ -596,29 +711,55 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
         display: none;
     }
     #header{
-    margin-top: 20px;
+    margin-top: 16px;
     background-color: transparent;
     margin-left: 25px;
     color:#fff;
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
+    z-index: 100;
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 10px;
+        
+    
     }
     
     #header p{
-    margin-top: 15px;
+    margin-top: 10px;
     background-color: transparent;
     color:#292918;
     font-weight: 900;
     font-family: 'Walls-Regular', sans-serif;
-    font-size: 75px;
+    font-size: 50px;
     letter-spacing: -8px;
-        position: fixed
+    position: fixed;
+    z-index: 100;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: -7px
 }
     
     #realbody{
-    margin-right: 30px;
+    margin-right: 0px;
     }
+    
+    .filterDiv{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center; 
+    float:left;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    transition: transform .1s; 
+    z-index: 0;
+    
+    
+}
+    
     
     #box{
         
@@ -635,50 +776,11 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
     transform: none
     }
     
-    #galerie{
-    width: 8080px;
-    
-    text-align: center;
-    margin-right: 20px;
-    margin-left: 75px;
-    padding-top: 20px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-
+    .filterDiv:hover {
+    transform: scale(1); 
     }
     
     
-    
-    #galerie img{
-    width: 200px;
-    height: 400px;
-    background-color: #000;
-    position: static;
-    border-radius: 9px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    margin-left: 0px;
-    
-    }
-    
-    .ghost_btn {
-    text-decoration: none;
-    font-size: 19px;
-    font-weight:600;
-    color: #FFF ;
-    padding: 9px 14px;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 9px;
-    cursor: pointer;
-    background-color: #292928; 
-    font-family: 'Roboto', sans-serif;
-    float: left;
-    margin-left: -151px;
-    margin-top: 359px;
-    }
     
     .footer a{
     display: none
@@ -687,15 +789,16 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
     .footer-mobile {
     display: block;
     height: 20px;
-    margin-top: 60px;
+    margin-top: 0px;
     margin-left: 25px;
-    position: fixed;
     bottom: 20px;
+    padding-bottom: 10px;
     }
     .footer-mobile a{
     background-color: transparent;
     color: #000;
     font-family: 'Roboto', sans-serif;
-    margin-right: 10px
+    margin-right: 10px;
+    
     }
 }
