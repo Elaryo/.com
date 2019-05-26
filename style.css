@@ -199,7 +199,7 @@ box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
 
 #myBtnContainer {
     margin-left: 69px;
-    padding-bottom: 67px;
+    padding-bottom: 7px;
 }
 
 #mymobile{
@@ -573,7 +573,7 @@ hr {
     
     #myBtnContainer {
     margin-left: 69px;
-    padding-bottom: 130px;
+    padding-bottom: 30px;
 }
     #pa{
         display: none;
@@ -598,7 +598,7 @@ hr {
 }
 
 /*---------------------------------------------------------*/
-@media (max-width: 990px){
+@media (max-width: 1002px){
     #kategorie{
         width:650px;
         height: 100px;
@@ -606,7 +606,7 @@ hr {
     
     #myBtnContainer {
     margin-left: 69px;
-    padding-bottom: 130px;
+    padding-bottom: 60px;
 }
     #pa{
         display: none;
@@ -641,7 +641,7 @@ hr {
     
     #myBtnContainer {
     margin-left: 69px;
-    padding-bottom: 130px;
+    padding-bottom: 60px;
 }
     #pa{
         display: none;
@@ -659,7 +659,7 @@ hr {
     
    #myBtnContainer {
     margin-left: 69px;
-    padding-bottom: 130px;
+    padding-bottom: 60px;
 }
     #pa{
         display: none;
@@ -695,7 +695,7 @@ hr {
     
    #myBtnContainer {
     margin-left: 69px;
-    padding-bottom: 130px;
+    padding-bottom: 60px;
 }
     #pa{
         display: none;
@@ -717,7 +717,7 @@ hr {
     
     #myBtnContainer {
     margin-left: 69px;
-    padding-bottom: 130px;
+    padding-bottom: 60px;
     
 }
     #pa{
