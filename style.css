@@ -126,9 +126,9 @@ box-shadow: 0px 0px 72px 25px rgba(0,0,0,0.75);
     background-color: transparent;
     color:#000;
     font-weight: 900;
-    font-family: 'Walls-Regular', sans-serif;
-    font-size: 75px;
-    letter-spacing: -8px
+    font-family: 'Roboto', sans-serif;
+    font-size: 55px;
+    
 }
 
 #header h1{
@@ -753,8 +753,7 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0);
     color:#e1e1e1;
     font-weight: 900;
     font-family: 'Walls-Regular', sans-serif;
-    font-size: 47px;
-    letter-spacing: -7px;
+    font-size: 27px;
     position: fixed;
     z-index: 100;
     width: 300px;
