@@ -72,21 +72,25 @@
    
     
     <div id=oo>
-    <div id=wt><img src="pictures/st.png"></div>
-    <div id=wtc><img src="pictures/stc.png"></div>
     
-    <div id="mymobile">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('paths')"> <a>Paths</a></button>
-        <button class="btn" onclick="filterSelection('nature')"><a>Nature</a></button>
-        <button class="btn" onclick="filterSelection('water')"> <a>Water</a></button>
-        <button class="btn" onclick="filterSelection('architecture')"> <a>Architecture</a></button>
-        <button class="btn" onclick="filterSelection('sports')"><a>Sports</a></button>
-        <button class="btn" onclick="filterSelection('mountains')"> <a>Mountains</a></button>
-        <button class="btn" onclick="filterSelection('patterns')"> <a>Patterns</a></button>
+        
+        <label for="toggle1">&#9776;</label>
+        <input type="checkbox" id="toggle1"/>
+        
+        <div id="menue">
+        <button class="btn" onclick="filterSelection('paths')"><img src="pictures/mountains.png"></button>
+        <button class="btn" onclick="filterSelection('nature')"><img src="pictures/nature.png"></button>
+        <button class="btn" onclick="filterSelection('water')"><img src="pictures/animals.png"></button>
+        <button class="btn" onclick="filterSelection('architecture')"> <img src="pictures/mountains.png"></button>
+        <button class="btn" onclick="filterSelection('sports')"><img src="pictures/mountains.png"></button>
+        <button class="btn" onclick="filterSelection('mountains')"> <img src="pictures/mountains.png"></button>
+        <button class="btn" onclick="filterSelection('patterns')"> <img src="pictures/mountains.png"></button>
         <div class="toggle"><img id="sw" src="pictures/sw.png" alt="sw-toggle"></div>
+        </div>
     </div>
-    </div>
+    
+  
+    
     
 
     <!-- Galerie -->

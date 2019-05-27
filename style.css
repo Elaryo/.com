@@ -315,13 +315,11 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
 }
 
 
-
-/* The "show" class is added to the filtered elements */
 .show {
   display: block;
 }
 
-/* Style the buttons */
+
 .btn {
   border: none;
   outline: none;
@@ -330,22 +328,15 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
   cursor: pointer;
 }
 
-/* Add a light grey background on mouse-over */
+
 .btn:hover {
   background-color: #ddd;
 }
 
-/* Add a dark background to the active button */
 .btn.active {
   background-color: #515151;
   color: white;
 }
-
-
-
-
-
-
 
 #box a:hover{
     background-color: #fff;
@@ -471,12 +462,6 @@ hr {
     display: none
 }
 
-
-
-
-
-
-
 .follow {
   display: inline-block;
   
@@ -561,7 +546,9 @@ hr {
   color: #111;
 }
 
-
+#oo{
+    display: none
+}
 
 
 /*---------------------------------------------------------*/
@@ -745,8 +732,9 @@ hr {
     }
     
     #oo{
-        display: none;
+        display: block
     }
+    
     
     
     .follow{
@@ -774,7 +762,7 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0);
     
     .container{
     padding-left: 0px;
-    padding-top: 25px;
+    padding-top: 55px;
     padding-right: 0px;
     width: 67%;
     margin: 0 auto;
@@ -807,7 +795,7 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0);
     margin-top: -11px;
     padding: 0;
     width: 100%;
-    border-top: 49px solid #1e1e1e;
+    border-top:59px solid #1e1e1e;
     position: fixed;
     z-index: 90;
     -webkit-box-shadow: 0px 0px 53px -15px rgba(0,0,0,0.68);
@@ -844,8 +832,9 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0);
     font-weight: 900;
     z-index: 100;
     width: 30%;
-    margin-top: 10px;
-    margin-left:10px
+    margin-top: 11px;
+    margin-left:13px;
+    padding-bottom: 17px
         
     
     }
@@ -855,7 +844,7 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0);
     color:#e1e1e1;
     font-weight: 900;
     font-family: 'Ranga', cursive;
-    font-size: 27px;
+    font-size: 32px;
     position: fixed;
     z-index: 100;
     width: 300px;
@@ -887,14 +876,33 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0);
       padding-left:20px;
       overflow-x: scroll;
       position: fixed;
-      top:-15px;
-      margin-left: 125px;
+      top:0px;
+      margin-left: 115px;
       z-index: 10001;
       
     }
 
     div.toggle{
         display: none
+    }
+    
+    button.btn  {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:600;
+    color: #FFF ;
+    padding: 3.5px 11px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 19px;
+    cursor: pointer;
+    background-color: #313131; 
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    margin-right: 16px;
+    margin-top: 15px;
+    border-style: none;
+    
     }
     
     button.btn  {
@@ -907,20 +915,24 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0);
     display:inline-block;
     position: fixed;
     z-index: 10002;
-    top: 0;
-    left: 125px;
-    height: 50px
+    top: 9px;
+    left: 114px;
+    height: 60px;
+    width: 40px
     }
     
-    #wtc{
+    #wtc img{
     display:inline-block;
     position: fixed;
     z-index: 10002;
     top: 0;
     right: 0px;
-    height: 50px
+    height: 60px
     }
-    
+    .btn img{
+        width: 25px;
+        padding: 1px
+    }
 
    
    
@@ -970,4 +982,73 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0);
     margin-right: 10px;
     
     }
+    
+    
+    
+    
+    
+    #oo{
+       top: 0px;
+       right: 0px;
+       position: fixed;
+       z-index: 100;
+        border-bottom: 1px solid #EAEAEB;
+    
+    height: 70px;
+    line-height: 70px;
+        
+        display: none
+       
+    }
+    
+
+
+
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 6px;
+    float: right;
+    top: -30px;
+    z-index: 1009
 }
+#toggle1 {
+    display: none;
+}
+
+label {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        top: -0px;
+        z-index: 1009
+    }
+#menue {
+        
+        width: 30px;
+        background-color: aliceblue;
+        display: block;
+        z-index: 10
+    }
+    
+    
+    #menue a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+}
+    
+#toggle1:checked + #menue {
+        display: block;
+    }
+    
+    
+
+
+    
+  
