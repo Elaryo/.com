@@ -269,8 +269,8 @@ button.btn:hover{
 .container{
     padding-left: 70px;
     padding-top: 34px;
-    padding-bottom: 44px;
-    padding-right: 35px
+    padding-bottom: 39px;
+    padding-right: 3px
 }
 
 
@@ -373,7 +373,7 @@ hr {
     margin: 0 auto;
     color: transparent;
     background: #000;
-    margin-bottom: -35px;
+    margin-bottom: 0px;
     visibility: hidden;
 }
 
@@ -394,7 +394,7 @@ hr {
     float: left;
     margin-bottom: 15px;
     
-    margin-left: 69px;
+    margin-left: 70px;
     background-color: transparent;
     color: #292928;
     font-family: 'Roboto', sans-serif;
@@ -403,7 +403,7 @@ hr {
 
 
 #termsp{
-    color: #fff;
+    color: #000;
     font-family: 'Roboto', sans-serif;
     margin-left: 94px;
     margin-top: 50px;
@@ -418,9 +418,9 @@ hr {
 
 #header-terms-kategorie{
     margin-top: 55px;
-    background-color: #000;
+    background-color: transparent;
     margin-left: 94px;
-    color:#fff;
+    color:#000;
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -429,8 +429,8 @@ hr {
 
 #header-terms-kategorie a{
     margin-top: 55px;
-    background-color: #000;
-    color:#fff;
+    background-color: transparent;
+    color:#000;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -441,7 +441,7 @@ hr {
     margin-top: 55px;
     background-color: #000;
     margin-left: 0px;
-    color:#fff;
+    color:#000;
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -451,7 +451,7 @@ hr {
 #header-terms a{
     margin-top: 55px;
     background-color: #000;
-    color:#fff;
+    color:#000;
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
