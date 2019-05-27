@@ -14,7 +14,9 @@ body.night
 }
 
 
-
+.oo{
+    display: none
+}
 .toggle
 {
     text-decoration: none;
