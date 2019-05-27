@@ -987,68 +987,320 @@ box-shadow: 0px 0px 53px -15px rgba(0,0,0,0);
     
     
     
-    #oo{
-       top: 0px;
-       right: 0px;
-       position: fixed;
-       z-index: 100;
-        border-bottom: 1px solid #EAEAEB;
     
-    height: 70px;
-    line-height: 70px;
-        
-        display: none
-       
-    }
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @import 'https://stas-melnikov.ru/r-blocks/r-button.css';
+@import 'https://stas-melnikov.ru/r-blocks/r-link.css';
+@import 'https://stas-melnikov.ru/r-blocks/r-list.css';
 
+/* Basic styles of the hamburger component */
 
-
-
-label {
-    margin: 0 40px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    display: none;
-    width: 6px;
-    float: right;
-    top: -30px;
-    z-index: 1009
-}
-#toggle1 {
-    display: none;
-}
-
-label {
-        display: block;
-        cursor: pointer;
-        color: #fff;
-        top: -0px;
-        z-index: 1009
-    }
-#menue {
-        
-        width: 30px;
-        background-color: aliceblue;
-        display: block;
-        z-index: 10
-    }
-    
-    
-    #menue a {
-    clear: right;
-    text-decoration: none;
-    color: gray;
-    margin: 0 10px;
-    line-height: 70px;
-}
-    
-#toggle1:checked + #menue {
-        display: block;
-    }
-    
-    
-
-
-    
+.hamburger{
+  --uiHamburgerDisplay: var(--hamburgerDisplay, inline-flex);
+  --uiHamburgerWidth: var(--hamburgerWidth, 28px);
+  --uiHamburgerHeight: var(--hamburgerHeight, 20px);
+  --uiHamburgerThickness: var(--hamburgerThickness, 4px);
+  --uiHamburgerBorderRadius: var(--hamburgerBorderRadius, 5px);
+  --uiHamburgerBgColor: var(--hamburgerBgColor, currentColor);
   
+  display: inline-block;
+  width: var(--uiHamburgerWidth);
+  height: var(--uiHamburgerHeight);
+  position: relative;
+  right: 10px;
+  text-indent: -9999px;
+}
+
+.hamburger::before, 
+.hamburger::after, 
+.hamburger__label{
+  width: 100%;
+  height: var(--uiHamburgerThickness);
+  border-radius: 50px;
+  background-color: #fff;
+
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before, 
+.hamburger::after{
+  content:"";
+}
+
+.hamburger::before{
+  top: 0;
+}
+
+.hamburger::after{
+  bottom: 0;
+}
+
+.hamburger__label{
+  top: calc(50% - calc(var(--uiHamburgerThickness) / 2));
+}
+
+/*
+=====
+LEVEL MENU STYLES
+=====
+*/
+
+.menu{
+  --uiMenuCircleSize: var(--menuCircleSize, 100px);
+  --uiMenuCircleOffset: var(--menuCircleOffset, 10px);
+  --uiMenuCircleBgColor: var(--menuCircleBgColor, currentColor);
+  
+  --hamburgerWidth: var(--menuHamburgerWidth, 28px);
+  --hamburgerHeight: var(--menuHamburgerHeight, 20px);
+  --hamburgerBgColor: var(--menuHamburgerBgColor, #fff);
+  
+  box-sizing: border-box;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;  
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+}
+
+.menu__nav{
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+
+  transition: opacity .2s ease-out;
+  opacity: 0;
+
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.menu__list{
+  width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  
+}
+
+.menu__toggle{
+  box-sizing: border-box;
+  width: 40px;
+  height:65px;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  flex: none;
+  
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  
+}
+
+.menu__toggle::before{
+  /*
+    Для того,чтобы создать полукруг требуется скрыть сделать
+    круг через border-radius: 50%; и скрыть половину через 
+    position: absolute и bottom: -.5em;
+  
+    Если поддерживать Edge не нужно, то можно сделать полукруг через clip-path.
+  */
+  
+  content: "";
+  width: 1px;
+  height: 1px;
+  font-size: var(--uiMenuCircleSize);
+  
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0%;
+
+  position: absolute;
+  top: 10px;
+  right: 1px;
+
+  will-change: width, height;
+  transition: transform .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+              width .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+              height .25s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+}
+
+.menu__hamburger::before{
+  /*
+    Для увеличения области нажатия на кнопке
+  */
+  
+  content: "";
+  width: 10px;
+  height: 100%;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* styles of hamburger's animation */
+
+.hamburger::before, 
+.hamburger::after, 
+.hamburger__label{
+  transition-timing-function: ease;
+  transition-duration: .15s;  
+}
+
+.hamburger::before, 
+.hamburger::after{
+  transition-property: transform;
+}
+
+.hamburger__label{
+  transition-property: transform, opacity;
+}
+
+/*
+=====
+LEVEL MENU STATES
+=====
+*/
+
+/* focused state */
+
+.menu__hamburger:focus{
+  outline: none;
+}
+
+/* activated state */
+
+.menu_activated{
+  height: 100%;
+}
+
+.menu_activated .menu__nav{
+  height: 100%;
+  opacity: 1;
+
+  will-change: opacity;
+  transition-duration: .2s;
+  transition-delay: .3s;
+}
+
+.menu_activated .menu__toggle::before{
+  width: 100vmax;
+  height: 100vmax;
+  transform: translate3d(-50vh, -50vh, 0) scale(5);
+  transition-duration: 1s;
+}
+
+.menu_activated .menu__list{
+  display: block;
+}
+
+.menu_activated .hamburger::before{
+  top: 50%;
+  transform: translate3d(0, -50%, 0) rotate(45deg);
+}
+
+.menu_activated .hamburger::after{
+  transform: translate3d(0, -50%, 0) rotate(135deg);
+  top: 50%;
+}
+
+.menu_activated .hamburger__label{
+  transform: rotate(-45deg) translate3d(-.285em,-.3em, 0);
+  opacity: 0;
+}
+
+
+
+@media (min-width: 768px){
+
+  html{
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 767px){
+
+  html{
+    font-size: 50%;
+  }
+}
+
+
+
+.page{
+  max-width: 380px;
+  padding: 10px;
+  margin: auto;  
+  text-align: center;
+}
+
+.page__name{
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.page__hint{
+  display: block;
+  line-height: 1.45;
+  margin-top: 1rem;
+}
+
+.menu__group{
+  color:#fff;
+  padding-left: 20px;
+  
+}
+
+    
+.btn2  {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:600;
+    color: #FFF ;
+    padding: 3.5px 11px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 19px;
+    cursor: pointer;
+    background-color: #313131; 
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    margin-right: 16px;
+    margin-top: 30px;
+    border-style: none;
+    -webkit-box-shadow: 0px 0px 75px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 75px -9px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 75px -9px rgba(0,0,0,0.75);
+
+    
+}
+
+    ul.r-list.menu__list{
+        margin-bottom: -20px
+    }
+
+    
+} 
