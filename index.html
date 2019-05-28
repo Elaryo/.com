@@ -69,69 +69,18 @@
     <h1>Find the most beautiful free 4k wallpapers, download them and use them for your mobile our for your desktop.</h1>
 
     </div>
-    
-    <div class="oo">
-    <div class="menu">
-  <nav class="menu__nav">
-    <ul class="r-list menu__list">
-      <li class="menu__group">
-        <button class="btn2" onclick="filterSelection('paths')"> Paths</button>
-      </li>
-      <li class="menu__group">
-        <button class="btn2" onclick="filterSelection('patterns')"> Patterns</button>
-      </li>
-      <li class="menu__group">
-        <button class="btn2" onclick="filterSelection('nature')"> Nature</button>
-      </li>
-      <li class="menu__group">
-        <button class="btn2" onclick="filterSelection('water')"> Water</button>
-      </li>
-      <li class="menu__group">
-        <button class="btn2" onclick="filterSelection('architecture')"> Architecture</button>
-      </li>
-      <li class="menu__group">
-        <button class="btn2" onclick="filterSelection('mountains')"> Mountains</button>
-      </li>
-    </ul>
-  </nav>
-  <div class="menu__toggle">
-    <button class="r-button menu__hamburger">
-      <span class="hamburger">
-        <span class="hamburger__label">Open menu</span>
-      </span>
-    </button>
-  </div> 
- </div>      
-  </div>
-    
-    <script>(function(){
-  'use strict';
+   
+    <div class="nav-m">
+        <ul class="ul-m">
+                <li class="li-m"><a class="a-m border-m" onclick="filterSelection('paths')">Paths</a></li>
+                <li class="li-m"><a class="a-m border-m" onclick="filterSelection('water')">Water</a></li>
+                <li class="li-m"><a class="a-m border-m" onclick="filterSelection('nature')"> Nature</a></li>
+                <li class="li-m"><a class="a-m border-m" onclick="filterSelection('patterns')"> Patterns</a></li>
+                <li class="li-m"><a class="a-m border-m" onclick="filterSelection('architecture')"> Architecture</a></li>
+                <li class="li-m"><a class="a-m border-m" onclick="filterSelection('mountains')"> Mountains</a></li>
+        </ul>
+    </div>
 
-  class Menu {
-    constructor(settings) {
-      this.menuNode = settings.menuNode;
-    }
-    
-    toggleMenuState(className) {      
-      if (typeof className !== 'string' || className.length === 0) {
-        return console.log('you did not give the class for toggleState function');
-      } 
-      return  this.menuNode.classList.toggle(className);
-    }
-  }
-
-  const jsMenuNode = document.querySelector('.menu');
-  const demoMenu = new Menu ({
-    menuNode: jsMenuNode
-  });
-  
-  function callMenuToggle(event) {
-    demoMenu.toggleMenuState('menu_activated');
-  }
-  
-  jsMenuNode.querySelector('.menu__hamburger').addEventListener('click', callMenuToggle);
-        })();
-    </script>
 
     <!-- Galerie -->
     
@@ -140,29 +89,28 @@
     </div>
     
     <div id=realbody>
-    <!-- Control buttons -->
-    <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('paths')"> Paths</button>
-        <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-        <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-        <button class="btn" onclick="filterSelection('water')"> Water</button>
-        <button class="btn" onclick="filterSelection('architecture')"> Architecture</button>
-        <button class="btn" onclick="filterSelection('sports')"> Sports</button>
-        <button class="btn" onclick="filterSelection('mountains')"> Mountains</button>
-        <button class="btn" onclick="filterSelection('patterns')"> Patterns</button>
-        <div class="toggle"><img id="sw" src="pictures/sw.png" alt="sw-toggle"></div>
-        
-        <div class="follow">
-          
-            <a class="icon first" data-href="https://elaryo.com" data-layout="button" data-size="small" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Felaryo.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img src="pictures/social1.png" alt="facebook icon"></a>
-            <a class="icon" href="https://twitter.com/intent/tweet?text=Download the most beautiful free 4k wallpapers at Elaryo.com"><img src="pictures/social2.png" alt="twitter icon"></a>
-            <a class="icon last" href="mailto:?subject=Download the most beautiful free 4k wallpapers at Elaryo.com&amp;body=Check out this site https://elaryo.com."
-   title="Elaryo"><img src="pictures/social3.png" alt="email icon"></a>
-          
-          <div class="label"><a>Share</a></div>
+        <!-- Control buttons -->
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('paths')"> Paths</button>
+            <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+            <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+            <button class="btn" onclick="filterSelection('water')"> Water</button>
+            <button class="btn" onclick="filterSelection('architecture')"> Architecture</button>
+            <button class="btn" onclick="filterSelection('sports')"> Sports</button>
+            <button class="btn" onclick="filterSelection('mountains')"> Mountains</button>
+            <button class="btn" onclick="filterSelection('patterns')"> Patterns</button>
+            <div class="toggle"><img id="sw" src="pictures/sw.png" alt="sw-toggle"></div>
+
+            <div class="follow">
+
+                <a class="icon first" data-href="https://elaryo.com" data-layout="button" data-size="small" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Felaryo.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img src="pictures/social1.png" alt="facebook icon"></a>
+                <a class="icon" href="https://twitter.com/intent/tweet?text=Download the most beautiful free 4k wallpapers at Elaryo.com"><img src="pictures/social2.png" alt="twitter icon"></a>
+                <a class="icon last" href="mailto:?subject=Download the most beautiful free 4k wallpapers at Elaryo.com&amp;body=Check out this site https://elaryo.com." title="Elaryo"><img src="pictures/social3.png" alt="email icon"></a>
+
+                <div class="label"><a>Share</a></div>
+            </div>
         </div>
-    </div>
       
         
         
