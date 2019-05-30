@@ -389,7 +389,7 @@ hr {
     margin: 0 auto;
     color: transparent;
     background: #000;
-    margin-bottom: 33px;
+    margin-bottom: 3px;
     
 }
 
@@ -464,10 +464,14 @@ hr {
     
 }
 
+.pad{
+    
+}
+
 #pa{
-    font-size: 0.1px;
-    color: transparent;
-    display: none
+    font-size: 1px;
+    color: #e2e2e2;
+    overflow: hidden
 }
 
 .follow {
