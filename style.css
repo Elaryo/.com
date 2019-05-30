@@ -759,6 +759,10 @@ hr {
         padding: 0;
         font-family: sans-serif;
         background-color: #e2e2e2;
+        background-image: url(pictures/bg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
 
 
     }
