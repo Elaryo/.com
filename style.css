@@ -1,12 +1,15 @@
-body
-{
-    width:1400px;
+body {
+    width: 1400px;
     max-width: 99%;
     margin: 0 auto;
     padding: 0;
-    
+
     background-color: #e2e2e2;
-    
+    background-image: url(pictures/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
 }
 body.night
 {
@@ -470,7 +473,7 @@ hr {
 
 #pa{
     font-size: 1px;
-    color: #e2e2e2;
+    color: transparent;
     overflow: hidden
 }
 
