@@ -287,7 +287,8 @@ button.btn:hover {
     padding-right: 10px;
     display: inline-block;
     position: relative;
-    z-index: 10010
+    z-index: 10010;
+    width: 94%;
 }
 
 
@@ -620,6 +621,7 @@ hr {
     .nav-m {
         display: none
     }
+}
 /*---------------------------------------------------------*/
 @media (max-width: 1002px){
     #kategorie {
@@ -654,7 +656,7 @@ hr {
     .nav-m {
         display: none
     }
-    
+}
 /*---------------------------------------------------------*/
 @media (max-width: 900px){
     #kategorie {
@@ -711,6 +713,8 @@ hr {
     .nav-m {
         display: none
     }
+    
+    }
 /*---------------------------------------------------------*/
 @media (max-width: 800px){
     #kategorie {
@@ -729,6 +733,7 @@ hr {
 
     .nav-m {
         display: none
+    }
     }
 /*---------------------------------------------------------*/
 @media (max-width: 700px){
@@ -1057,3 +1062,6 @@ hr {
         color: #111;
         border-bottom: 2px solid
     }
+    
+    }
+    
